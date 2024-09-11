@@ -1,0 +1,106 @@
+.dimmedBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(15px);
+  z-index: 100;
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 12px;
+  gap: 12px;
+  width: 300px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Noto Sans KR", system-ui;
+}
+
+.description {
+  padding: 12px 14px;
+  font-size: 12px;
+  font-family: "Noto Sans KR", system-ui;
+  color: lightslategray;
+  text-align: center;
+  line-height: 130%;
+  white-space: pre-wrap;
+}
+
+.date {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(68, 68, 68);
+  font-family: "Noto Sans KR", system-ui;
+}
+
+.divideLine {
+  margin: 12px 0;
+  width: 100%;
+  border: 1px dashed lightslategray;
+}
+
+.noticeBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(68, 68, 68);
+  font-family: "Noto Sans KR", system-ui;
+
+  span {
+    &:first-child {
+      font-size: 14px;
+    }
+
+    &:last-child {
+      color: rgb(212, 82, 82);
+    }
+  }
+}
+
+.btnBox {
+  display: flex;
+  justify-content: center;
+  padding: 14px 12px 0;
+  width: 100%;
+  gap: 12px;
+}
+
+.confirm {
+  padding: 8px 0;
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  background-color: rgb(93, 207, 58);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Noto Sans KR", system-ui;
+}
+
+.cancle {
+  padding: 8px 0;
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  background-color: rgb(212, 82, 82);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Noto Sans KR", system-ui;
+}
